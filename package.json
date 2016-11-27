@@ -1,0 +1,20 @@
+{
+  "name": "node-test",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "sync-version bower.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "package-version-sync": "0.0.2",
+    "sync-version": "file:..\\sync-version"
+  },
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-datetime-input": "file:..\\angular-datetime"
+  }
+}
