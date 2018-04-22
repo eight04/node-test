@@ -1,6 +1,5 @@
-import {bar} from "./c";
-
-export const moduleVa = bar;
-export function loadModule() {
-	return import("./b");
-}
+var a = "hello";
+module.exports = function() {
+  return Promise.resolve(require("./b.js"))
+    .then(b => a + " " + b);
+};

@@ -1,11 +1,7 @@
-define(['exports', './chunk-dd5b17ba.js'], function (exports, __chunk_1) { 'use strict';
+define(function () { 'use strict';
 
-	const foo = "Hello";
-	const bab = __chunk_1.bar;
+	var b = "world";
 
-	exports.foo = foo;
-	exports.bab = bab;
-
-	Object.defineProperty(exports, '__esModule', { value: true });
+	return b;
 
 });

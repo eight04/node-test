@@ -1,13 +1,11 @@
-define(['require', 'exports', './chunk-dd5b17ba.js'], function (require, exports, __chunk_1) { 'use strict';
+define(['require'], function (require) { 'use strict';
 
-	const moduleVa = __chunk_1.bar;
-	function loadModule() {
-		return new Promise(function (resolve, reject) { require(["./b.js"], resolve, reject) });
-	}
+  var a = "hello";
+  var a_1 = function() {
+    return new Promise(function (resolve, reject) { require(["./b.js"], resolve, reject) })
+      .then(b => a + " " + b);
+  };
 
-	exports.moduleVa = moduleVa;
-	exports.loadModule = loadModule;
-
-	Object.defineProperty(exports, '__esModule', { value: true });
+  return a_1;
 
 });
