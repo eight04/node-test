@@ -1,22 +1,10 @@
-import commonjs from "rollup-plugin-commonjs";
-import re from "rollup-plugin-re";
 export default {
 	input: ["a.js", "b.js"],
   output: {
-    format: "amd",
+    format: "cjs",
     dir: "dist"
   },
-	plugins: [
-    re({
-      patterns: [
-        {
-          test: /Promise\.resolve\(require(\((["'])(?:\\\2|[^\n])*?\2\))\)/g,
-          replace: "import$1"
-        }
-      ]
-    }),
-    commonjs()
-  ],
+	plugins: [],
   experimentalDynamicImport: true,
   experimentalCodeSplitting: true
 };

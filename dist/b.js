@@ -1,7 +1,9 @@
-define(function () { 'use strict';
+'use strict';
 
-	var b = "world";
+Object.defineProperty(exports, '__esModule', { value: true });
 
-	return b;
+var a = require('./a.js');
 
-});
+const b = a.a + " world";
+
+exports.b = b;

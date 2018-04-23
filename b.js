@@ -1,1 +1,2 @@
-module.exports = "world";
+import {a} from "./a";
+export const b = a + " world";

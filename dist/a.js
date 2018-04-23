@@ -1,11 +1,9 @@
-define(['require'], function (require) { 'use strict';
+'use strict';
 
-  var a = "hello";
-  var a_1 = function() {
-    return new Promise(function (resolve, reject) { require(["./b.js"], resolve, reject) })
-      .then(b => a + " " + b);
-  };
+Object.defineProperty(exports, '__esModule', { value: true });
 
-  return a_1;
+const a = "hello";
+const b = () => Promise.resolve(require("./b.js"));
 
-});
+exports.a = a;
+exports.b = b;
