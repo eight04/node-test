@@ -1,6 +1,4 @@
-var foo = "FOO";
-
-// const unused = () => import("./foo.js");
+import foo from './foo.js';
 
 var entry = () => foo;
 
