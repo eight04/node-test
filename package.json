@@ -13,8 +13,6 @@
   "license": "Unlicense",
   "devDependencies": {
     "rollup": "^0.60.7",
-    "rollup-plugin-commonjs": "^9.1.0",
-    "rollup-plugin-re": "^1.0.7",
     "shx": "^0.3.0"
   },
   "dependencies": {}
