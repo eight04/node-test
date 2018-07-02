@@ -13,6 +13,7 @@
   "license": "Unlicense",
   "devDependencies": {
     "rollup": "^0.60.7",
+    "rollup-plugin-analyzer": "^2.0.3",
     "shx": "^0.3.0"
   },
   "dependencies": {}
