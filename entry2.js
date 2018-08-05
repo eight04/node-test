@@ -1,1 +1,2 @@
-console.log("entry 2");
+import {bar} from "./bar.js";
+console.log(bar);
