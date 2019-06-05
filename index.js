@@ -1,6 +1,6 @@
-const {JSDOM} = require("jsdom");
-const dom = new JSDOM(`<select multiple><option>1</option><option>2</option></select>`);
-const select = dom.window.document.querySelector("select");
-console.log(select.selectedOptions.length);
-select.options[0].selected = true;
-console.log(select.selectedOptions.length);
+const assert = require("assert");
+const fs = require("fs");
+fs.writeFileSync("config.js", "module.exports = () => 'hello'", "utf8");
+const hello = require("./config");
+assert.equal(hello(), "hello");
+fs.unlinkSync("config.js");
