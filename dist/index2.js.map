@@ -1,0 +1,1 @@
+{"version":3,"file":"index2.js","sources":["../src/index2.js"],"sourcesContent":["export {foo} from \"./foo.js\";\r\nconsole.log(foo);\r\n"],"names":[],"mappings":";;AACA,OAAO,CAAC,GAAG,CAAC,GAAG,CAAC,CAAC"}

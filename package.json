@@ -8,11 +8,11 @@
   "main": "index.js",
   "author": "eight04 <eight04@gmail.com>",
   "license": "Unlicense",
-  "devDependencies": {},
-  "dependencies": {
-    "c8": "^4.0.0"
+  "devDependencies": {
+    "rollup": "^1.27.14"
   },
+  "dependencies": {},
   "scripts": {
-    "test": "c8 --reporter lcov node index"
+    "build": "rollup -c"
   }
 }
