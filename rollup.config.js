@@ -1,5 +1,14 @@
-require('dotenv').config();
-
-const { getRollupConfig } = require('@elderjs/elderjs');
-const svelteConfig = require('./svelte.config');
-module.exports = [...getRollupConfig({ svelteConfig })];
+import inject from "@rollup/plugin-inject";
+module.exports = {
+  input: {
+    "a": "src/a.js",
+  },
+  output: {
+    dir: "dist",
+  },
+  plugins: [
+    inject({
+      process: require.resolve("./shim/process")
+    })
+  ]
+};
