@@ -2,12 +2,18 @@
   "name": "node-test",
   "version": "0.0.0",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "pretest": "npm run build",
+    "test": "node dist/a.mjs"
   },
   "devDependencies": {
-    "@rollup/plugin-inject": "^4.0.4",
-    "rollup": "^2.77.2"
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "rollup": "^3.14.0",
+    "rollup-plugin-cjs-es": "^2.0.0"
   },
   "license": "MIT",
-  "files": []
+  "files": [],
+  "dependencies": {
+    "localforage": "^1.10.0"
+  }
 }
